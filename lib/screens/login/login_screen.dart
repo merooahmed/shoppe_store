@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppeapp/constants/constant_fonts.dart';
 import 'package:shoppeapp/screens/login/widgets/halfcircle_clipper.dart';
 import 'package:shoppeapp/screens/login/widgets/logincliper.dart';
 import 'package:shoppeapp/screens/recoverypassword/recovery_password_screen.dart';
+import 'package:shoppeapp/screens/signin/create_account.dart';
 import 'package:shoppeapp/widgets/signin/right_signin_clipper.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -154,11 +156,7 @@ class LoginScreen extends StatelessWidget {
                     height: 75,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const RecoveryPasswordScreen()));
+                        Get.to(() => const PasswordScreen());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xff004CFF),
@@ -178,9 +176,11 @@ class LoginScreen extends StatelessWidget {
                   ),
                   Center(
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.to(() => CreateAccount());
+                        },
                         child: const Text(
-                          "Cancel",
+                          "Sing Up",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 25,

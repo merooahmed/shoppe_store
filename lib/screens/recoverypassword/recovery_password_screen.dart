@@ -5,8 +5,8 @@ import 'package:shoppeapp/screens/login/widgets/logincliper.dart';
 import 'package:shoppeapp/screens/recoverypassword/passwordcode_recovery.dart';
 import 'package:shoppeapp/widgets/signin/right_signin_clipper.dart';
 
-class RecoveryPasswordScreen extends StatelessWidget {
-  const RecoveryPasswordScreen({super.key});
+class PasswordScreen extends StatelessWidget {
+  const PasswordScreen({super.key});
   final bool isChecked = true;
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:shoppeapp/constants/constant_fonts.dart';
+import 'package:shoppeapp/screens/login/login_screen.dart';
 import 'package:shoppeapp/screens/signin/create_account.dart';
 
 class ShoppeOnboarding extends StatelessWidget {
@@ -8,7 +10,6 @@ class ShoppeOnboarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(150),
@@ -64,7 +65,9 @@ class ShoppeOnboarding extends StatelessWidget {
               width: double.infinity,
               height: 75,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.offAll( CreateAccount());
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff004CFF),
                   shape: RoundedRectangleBorder(
@@ -98,7 +101,7 @@ class ShoppeOnboarding extends StatelessWidget {
                 IconButton(
                     color: const Color(0xff004CFF),
                     onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateAccount()));
+                      Get.offAll(const LoginScreen());
                     },
                     icon: const Icon(Icons.arrow_circle_right_outlined)),
               ],

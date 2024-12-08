@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "9691196237",
+    "project_id": "shoppestore-b1181",
+    "storage_bucket": "shoppestore-b1181.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9691196237:android:bb094e7e4994aa2e986504",
+        "android_client_info": {
+          "package_name": "com.example.shoppeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9RXoR5DgGrfMY8jJi3oczyYCL85DNcXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -32,15 +32,19 @@ dependencies:
   csc_picker: ^0.2.7
   cupertino_icons: ^1.0.6
   dotted_border: ^2.1.0
+  firebase_auth: 4.17.8
+  firebase_core: 2.27.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
+  get: ^4.6.6
+  get_it: ^8.0.2
   iconsax: ^0.0.8
   intl_phone_field: ^3.2.0
   shared_preferences: 2.2.3
 
 dev_dependencies:
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
 
